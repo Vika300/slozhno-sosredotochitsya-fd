@@ -89,7 +89,6 @@
   line-height: 18px;
   text-align: center;
   background-color: transparent;
-  border: none;
   color: var(--color-button);
   text-transform: lowercase;
   padding-top: 1.5px;
@@ -231,7 +230,7 @@
   color:var(--color-decorated-rec);
 }
 
-.decorated-rec::after  {
+.decorated-rec::after {
   content: "";
   width: 9px;
   height: 9px;
