@@ -9,7 +9,39 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
+  --color-title: #FFC2E6;
+  --color-epigraph: #353430;
+  --epigraph-bg-color: #FF8DCB;
+  --color-main-text: #353430;
+  --color-main-title: #353430;
+  --color-button: #353430;
+  --color-decorated: #353430;
+  --color-decorated-rec: transparent;
+  --bg-color: #FFF1F7;
+  --color-main-anchor-link: #353430;
+  --color-shadow-focus: #FF0070;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */ 
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #FF8DCB;
+    --color-title: #FFC2E6;
+    --color-epigraph: #353430;
+    --epigraph-bg-color: #FF8DCB;
+    --color-main-text: #353430;
+    --color-main-title: #353430;
+    --color-button: #353430;
+    --color-decorated: #353430;
+    --color-decorated-rec: transparent;
+    --bg-color: #FFF1F7;
+    --color-main-anchor-link: #353430;
+    --color-shadow-focus: #FF0070;
+    }   
+  }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
