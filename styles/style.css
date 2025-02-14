@@ -155,15 +155,6 @@
   color: var(--color-epigraph);
 }
 
-.header__p {
-  /* font-weight: 700;
-  line-height: 23.4px;
-  min-height: 117px; */
-  /* background-color: var(--epigraph-bg-color); */
-  /* color: var(--color-epigraph); */
-  /* padding-right: 10px; */
-}
-
 @media (width >= 768px) {
   .header__epigraph {
     align-self: end;
@@ -228,16 +219,16 @@
   align-items: center;
 }
 
-.decorated-rec::before {
-  content: "REC";
-  color:var(--color-decorated-rec);
-}
-
 @media (width >= 768px) {
   .decorated-rec {
     top: 20px;
     right: 28px;
   }
+}
+
+.decorated-rec::before {
+  content: "REC";
+  color:var(--color-decorated-rec);
 }
 
 .decorated-rec::after  {
@@ -267,7 +258,6 @@
   font-weight: 700;
   font-size: var(--font-size);
   line-height: 23.4px;
-  /* margin-bottom: 20px; */
 }
 
 @media (width >= 768px) {
@@ -291,21 +281,8 @@
 
 .main-title-text {
   background-color: var(--accent-color);
-  /* margin-bottom: 10px; */
   font-size: var(--font-size);
   line-height: 23.4px;
-}
-
-@media (width >= 768px) {
-  .main-title-text {
-    /* margin-bottom: 20px; */
-  }
-}
-
-@media (width >= 1024px) {
-  .main-title-text {
-    /* margin-bottom: 20px; */
-  }
 }
 
 .main-bloc-one,
@@ -315,24 +292,13 @@
   margin-bottom: 50px;
 }
 
-.main-bloc-content-one {
-  display: grid;
-  gap: 20px;
-  /* grid-area: main-bloc-content-one; */
-}
-
 @media (width >= 768px) {
   .main-bloc-one {
     margin-bottom: 80px;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
     "main-title-one main-bloc-content-one";
-  }
-
-  .main-bloc-content-one {
-    grid-area: main-bloc-content-one;
   }
 
   .main-bloc-two {
@@ -343,6 +309,17 @@
 @media (width >= 1024px) {
   .main-bloc-one {
     gap: 10px;
+  }
+}
+
+.main-bloc-content-one {
+  display: grid;
+  gap: 20px;
+}
+
+@media (width >= 768px) {
+  .main-bloc-content-one {
+    grid-area: main-bloc-content-one;
   }
 }
 
@@ -357,14 +334,8 @@
   }
 }
 
-.main-content-one,
-.main-content-two {
-  /* margin-bottom: 20px; */
-}
-
 .main-text {
   color: var(--color-main-text);
-  /* font-size: var(--font-size); */
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
@@ -374,7 +345,6 @@
 .main-anchor-link {
   color:  var(--color-main-anchor-link);
   font-weight: 400;
-  /* font-size: var(--font-size); */
   line-height: 23.4px;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
