@@ -6,7 +6,7 @@
   --font-size-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --font-size: 18px;
-  --font-family: IBM Plex Mono, Bold, Regular, monospace;
+  --font-family: "IBM Plex Mono", monospace;
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
   --color-title: #DB00FF;
