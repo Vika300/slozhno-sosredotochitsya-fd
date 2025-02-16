@@ -23,6 +23,7 @@
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
   position: relative;
   margin-block-end: 40px;
   min-height: 668px;
@@ -33,6 +34,7 @@
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
     margin-bottom: 60px;
   }
 }
@@ -43,22 +45,8 @@
   }
 }
 
-.header__theme-menu {
-  margin-top: 60px;
-  margin-bottom: 65px;
-}
-
-@media (width >= 768px) {
-  .header__theme-menu {
-    margin-top: 170px;
-    margin-bottom: 173px;
-  }
-}
-
 @media (width >= 1024px) {
   .header__theme-menu {
-    margin-top: 0;
-    margin-bottom: 0;
     inline-size: 230px;
     justify-self: center;
     align-self: start;
@@ -130,37 +118,18 @@
   }
 }
 
-@media (width >= 1024px) {
-  .header__title {
-    font-size: var(--font-size-title);
-    margin-top: -20px;
-  }
-}
-
 .header__epigraph {
   display: flex;
   flex-direction: column;
   font-weight: 700;
   line-height: 23.4px;
-  margin-top: 55px;
-  margin-bottom: 66px;
   background-color: var(--epigraph-bg-color);
   color: var(--color-epigraph);
 }
 
 @media (width >= 768px) {
   .header__epigraph {
-    align-self: end;
     inline-size: 50%;
-    margin-top: 162px;
-    margin-bottom: 183px;
-  }
-}
-
-@media (width >= 1024px) {
-  .header__epigraph {
-    margin-top: 94px;
-    margin-bottom: 134px;
   }
 }
 
@@ -271,8 +240,7 @@
   font-weight: normal;
 }
 
-.main-content-section,
-.alt-content-section {
+.main-content-section {
   display: grid;
   gap: 20px;
   margin-bottom: 50px;
@@ -282,22 +250,25 @@
   .main-content-section {
     margin-bottom: 80px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-template-areas:
     "main-title main-bloc-content";
   }
 
-  .alt-content-section {
-    margin-bottom: 80px;
+  .alt-section-layout {
     grid-template-areas:
-    "main-title"
-    "main-bloc-content";
+    "main-title main-title"
+    "main-bloc-content main-bloc-content";
   }
 }
 
 @media (width >= 1024px) {
   .main-content-section {
     gap: 10px;
+  }
+
+  .alt-section-layout {
+    gap: 20px;
   }
 }
 
@@ -313,7 +284,7 @@
 }
 
 @media (width >= 1024px) {
-  .section-gorisont {
+  .alt-div-layout {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -422,7 +393,7 @@
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  min-height: 375px;
+  min-height: 355px;
 }
 
 @media (width >= 768px) {
